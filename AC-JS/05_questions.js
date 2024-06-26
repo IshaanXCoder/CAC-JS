@@ -10,7 +10,7 @@ for(let val of marks){
 
 avg = sum/ (marks.length)
 
-//h
+//hey
 console.log(avg);
 
 
