@@ -10,4 +10,15 @@ let x = document.querySelector('h1')
 
 document.querySelector('h1').innerHTML = "heyaaaa "
 
-document.getElementsByClassName('ishaan').innerHTML = "hellllllll"
+let umm = document.getElementsByClassName("ishaan")
+// console.log(umm);
+// console.log(umm);
+// console.log(umm);
+
+// console.log(umm);
+
+document.querySelector('h1').style.color = "red"
+
+
+
+let butt = document.getElementsByClassName("btn")
