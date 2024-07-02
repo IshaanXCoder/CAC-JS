@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; color: white;">
+    <h2 class="name2" id="nameID2">HEADING 2 HE YE!</h2>
+    <h2 class="name2" id="nameID">HEADING 2 HE YE!</h2>
+    <h3 class="name2" id="nameID3">HEADING 3 HE YE!</h3>
+    <h1 class="name1" id="nameID1">HEADING 1 HE YE!</h1>
+    <h4 class="name4" id="nameID4">HEADING 4 HE YE!</h4>
+    
+
+
+    <div class="list">
+        <ul class="ulClass">
+          <li>i</li>
+          <li>s</li>
+          <li>h</li>
+          <li>a</li>
+          <li>a</li>
+        </ul>
+      </div>
+  
+      <script>
+        function addElem(elemName){
+          const li = document.createElement('li')
+          li.innerHTML = elemName;
+          document.querySelector('.ulClass')
+          appendChild(li)
+        }
+        addElem("ishaaaannn");
+      </script>
+
+
+
+    <script src="scr.js"></script>
+</body>
+</html>
