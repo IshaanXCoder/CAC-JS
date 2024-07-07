@@ -4,13 +4,18 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     // this would prevent the default function of a form ehih is sending the details to the server
 
-    const height = parseInt(document.querySelector('#height').value)
-    const weight = parseInt(document.querySelector('#weight').value)
-    const stat = document.querySelector("#calcBMI")
+    const h = parseInt(document.querySelector('#height').value)
+    const w = parseInt(document.querySelector('#weight').value)
+    const s = document.querySelector("#calcBMI")
+    const f = document.querySelector("#FirstName").value
+    const l = document.querySelector("#LastName").value
 
-    bmi = (weight/(height*height));
-    console.log(bmi);
+    const bmi = (10000*(w/(h*h))).toFixed(2);
 
-    stat.innerHTML = `Hey bruh, your BMI is ${bmi}`
+    console.log(`Weight is ${w}`);
+    console.log(`Height is ${h}`);
+    console.log(`BMI is ${bmi}`);
+
+    s.innerHTML = `Hey ${f} ${l}, your BMI is ${bmi}`
 
 })
